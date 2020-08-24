@@ -1,0 +1,13 @@
+#ajaxLoaderDiv{
+    position: absolute;
+    z-index: 1;
+    width: 25%;
+    left: 37.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#ajaxLoaderDiv img{
+    width: 80%;
+}

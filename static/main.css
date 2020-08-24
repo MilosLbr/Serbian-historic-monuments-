@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.row {
+  border: 1px solid transparent;
+}
+
+.jumbotron {
+  background-color: rgba(212, 230, 245, 0.884);
+}
+
+.mapContainer {
+  position: relative;
+}
+
+.button-90w {
+  width: 90%;
+}
+
+.resultsList {
+  position: absolute;
+  top: 46.5px;
+  left: 15px;
+  right: 5px;
+  z-index: 10;
+  background-color: white;
+  list-style-type: none;
+  visibility: visible;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.balloonTitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5px 0 10px 0px;
+  display: block;
+}
+
+.imageContainer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.balloonFooter {
+  display: flex;
+}
+
+@media (max-width: 426px) {
+  .balloonTitle {
+    max-width: 230px;
+  }
+
+  .imageContainer {
+    max-width: 230px;
+  }
+
+  .balloonParagraph {
+    max-width: 230px;
+  }
+
+  .balloonFooter {
+    max-width: 230px;
+  }
+}
+#ajaxLoaderDiv {
+  position: absolute;
+  z-index: 1;
+  width: 25%;
+  left: 37.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+#ajaxLoaderDiv img {
+  width: 80%;
+}
+
+/*# sourceMappingURL=main.css.map */

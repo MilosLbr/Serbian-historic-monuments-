@@ -1,0 +1,17 @@
+.resultsList{
+    position: absolute;
+    top: 46.5px;
+    left: 15px;
+    right: 5px;
+    z-index: 10;
+    background-color: white;
+    list-style-type: none;
+    visibility: visible;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+    background-color: #eee;
+}

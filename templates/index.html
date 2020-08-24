@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    
+    <title>Знаменити локалитети у Србији</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class=" text-center">Знаменити локалитети у Србији</h1>
+        <p class="lead">
+            Ова страница омогућава претрагу споменика и културних добара у Србији према називу културног добра или према општини, односно месту где се културно добро налази. 
+        </p>
+        <p>
+            Споменици културе су подељени у 5 категорија: Археолошка налазишта, Знаменита места, Просторне културно-историјске целине, Споменици културе и Споменици на УНЕСКО листи.
+        </p>
+    </div>
+    
+
+    <div id="main"></div>
+
+    <div class="mapContainer mb-5">
+        <div id="map" style="width: 100%; height: 530px"></div>
+
+        <div id= "ajaxLoaderDiv" class="imageContainer">
+            <img src ='static/ajaxloader.gif' draggable = "false"></img>
+        </div>
+    </div>
+
+    <blockquote class="blockquote p-1">
+        <footer class="blockquote-footer">неке од локација нису 100% тачне.</cite></footer>
+    </blockquote>
+    
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=266bc896-4191-44a1-b839-40e7c4139fd6&lang=sr_RU&load=package.full" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='bundle.js')}}"></script>
+</body>
+</html>
